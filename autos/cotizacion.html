@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es" class="html__style">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compra o vende tu vehiculo con una empresa de mas de 40 años de trayectoria.">
+    <meta name="keywords" content="comprar auto, autos usados, 0km, cotizacion, financiacion, vender auto" >
+    <title>Cotiza tu vehiculo | CarShop Arg</title>
+    <link rel="icon" href="../multimedia/icon-page.png">
+    <link rel="stylesheet" href="../css/estilos-cotizacion.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav navbar navbar-expand-sm">
+            <div class="container-fluid">
+              <a href="../index.html"><img class="header__img" src="../multimedia/logo-header.png" alt="Nuestro logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link header__list px-3 py-0" href="../index.html">Inicio</a>
+                    <a class="nav-link header__list px-3 py-0" href="./comprar.html">Catalogo</a>
+                    <a class="nav-link header__list px-3 py-0" href="./post-venta.html">Post-venta</a>
+                    <a class="nav-link header__list px-3 py-0" href="./cotizacion.html">cotización</a>
+                    <a class="nav-link header__list px-3 py-0" href="./contacto.html">Contacto</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section class="section">
+            <div class="container">
+                <form class="row border border-4 mt-5 mb-5">
+                    <h3 class="mb-4 mt-4 text-center txt">Acerca del vehiculo.</h3>
+                    <div class="col-6 mb-3">
+                        <label for="inputbrand" class="form-label sub-text">Marca</label>
+                        <input type="text" class="form-control section__input" id="inputbrand" placeholder="Ingrese la marca del vehiculo.">
+                    </div>
+                    <div class="col-6 mb-3">
+                        <label for="inputmodel" class="form-label sub-text">Modelo</label>
+                        <input type="text" class="form-control section__input" id="inputmodel" placeholder="Ingrese el modelo del vehiculo.">
+                    </div>
+                    <div class="col-4 mb-3">
+                        <label for="inputkilometres" class="form-label sub-text">Kilometros</label>
+                        <input type="number" min="0" max="150000" step="1000" class="form-control section__input" id="inputkilometres" placeholder="Ingrese los kilometros del vehiculo.">
+                    </div>
+                    <div class="col-4 mb-3">
+                        <label for="inputcolor" class="form-label sub-text">Color</label>
+                        <input type="text" class="form-control section__input" id="inputcolor" placeholder="Ingrese el color del vehiculo.">
+                    </div>
+                    <div class="col-4 mb-3">
+                        <label for="inputquestion" class="form-label d-block sub-text">¿Tiene GNC?</label>
+                        <select class="form-control section__input" id="inputquestion">
+                            <option value="1">Si</option>
+                            <option value="2">No</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="container border border-4 mt-5 mb-5">
+                <form class="row">
+                    <h3 class="mb-4 mt-4 text-center txt">Acerca del Dueño.</h3>
+                    <div class="col-6 mb-3">
+                        <label for="inputname" class="form-label sub-text">Nombre y apellido</label>
+                        <input type="text" class="form-control section__input" id="inputname" placeholder="Ingrese su nombre y apellido.">
+                    </div>
+                    <div class="col-6 mb-3">
+                      <label for="InputEmail" class="form-label sub-text" placeholder="Correo electrónico">Correo electrónico</label>
+                      <input type="email" class="form-control section__input" id="InputEmail" aria-describedby="emailHelp" placeholder="Ingrese su correo electrónico.">
+                      <div id="emailHelp" class="form-text">*Nunca compartiremos su correo electrónico con nadie más.</div>
+                    </div>
+                    <div class="col-3 mb-3">
+                        <label for="inputcel" class="form-label sub-text">Telefono</label>
+                        <input type="tel" class="form-control section__input" id="inputcel" placeholder="Ingrese su celular.">
+                    </div>
+                    <div class="col-3 mb-3">
+                        <label for="inputprovince" class="form-label sub-text">Provincia</label>
+                        <input type="text" class="form-control section__input" id="inputprovince" placeholder="Ingrese su provincia">
+                    </div>
+                    <div class="col-3 mb-3">
+                        <label for="inputcity" class="form-label sub-text">Ciudad</label>
+                        <input type="text" class="form-control section__input" id="inputcity" placeholder="Ingrese su ciudad.">
+                    </div>
+                    <div class="col-3 mb-3">
+                        <label for="inputcp" class="form-label sub-text">Codigo Postal</label>
+                        <input type="number" min="0" max="5000" class="form-control section__input" id="inputcp" placeholder="Ingrese su código postal.">
+                    </div>
+                    <div class="col-12 mb-3">
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input section__ckeck" id="exampleCheck1">
+                          <label class="form-check-label section__block" for="exampleCheck1">Acepto los términos</label>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <button type="submit" class="btn btn-primary section__button">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    
+    <footer class="footer text-white">
+        <div>
+            <ul class="footer__ul">
+                <a href="#" class="footer__li"><li>Terminos y condiciones</li></a>
+                <a href="#" class="footer__li"><li>Trabaja con nosotros</li></a>
+                <a href="#" class="footer__li"><li>Como cuidamos tu privacidad</li></a>
+                <a href="#" class="footer__li"><li>Ayuda</li></a>
+            </ul>
+        </div>
+        <div class="footer__grilla">
+            <div class="footer__div">
+                <strong class="footer__st">Direccion</strong>
+                <p class="footer__p">Somos una agencia de venta de vehículos usados ubicada en la zona de Ezeiza (Buenos Aires).</p>
+                <p class="footer__p">Gaddini 852 (CP. 1806)</p>
+            </div>
+            <div class="footer__div">
+                <strong class="footer__st">Contacto</strong>
+                <p class="footer__p">Teléfono: (011) 7020-0000</p>
+                <p class="footer__p">Celular: +54 9 11 1111-2222</p>
+                <p class="footer__p">info@automoviles.com.ar</p>
+            </div>
+            <div class="footer__div">
+                <strong class="footer__st">Horarios</strong>
+                <p class="footer__p">Lunes a viernes: de 9 a 13hs y de 15 hasta 19hs</p>
+                <p class="footer__p">Sabados: de 9 a 13hs</p>
+                <p class="footer__p">Domingo: Cerrado</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

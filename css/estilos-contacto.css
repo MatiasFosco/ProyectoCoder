@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.html__style{
+    font-size: 62.5%;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.header__nav{
+    background: rgb(21,31,75);
+    background: -moz-linear-gradient(0deg, rgba(21,31,75,1) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(21,31,75,1) 0%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(0deg, rgba(21,31,75,1) 0%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#151f4b",endColorstr="#000000",GradientType=1);
+}
+
+.header__img{
+    width: 20rem;
+    height: 7rem;
+    filter: invert(1);
+}
+
+.header__list{
+    font-size: 1.4rem;
+    color: white;
+    border-left: 0.1rem solid white;
+}
+
+.header__list:hover{
+    color: aquamarine;
+    text-decoration: underline;
+}
+
+
+
+.section{
+    margin-top: 10rem;
+}
+
+.section__title{
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.section__p{
+    font-size: 2rem;
+    margin-bottom: 0.4rem;
+}
+
+
+
+
+
+.footer{
+    background: rgb(21,31,75);
+    background: -moz-linear-gradient(0deg, rgba(21,31,75,1) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(21,31,75,1) 0%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(0deg, rgba(21,31,75,1) 0%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#151f4b",endColorstr="#000000",GradientType=1);
+}
+
+.footer__ul{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+.footer__li{
+    font-size: 1.3rem;
+    margin: 1rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.footer__li:hover{
+    color: aquamarine;
+    text-decoration: underline;
+}
+
+.footer__grilla{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0.7rem;
+}
+
+.footer__st{
+    display: block;
+    text-align: center;
+    font-size: 1.4rem;
+    border-bottom: 0.1rem solid white;
+    border-top: 0.1rem solid white;
+}
+
+.footer__p{
+    font-size: 1.2rem;
+}
+
+.footer__div{
+    margin: 0rem 1rem 1rem 1rem;
+}
