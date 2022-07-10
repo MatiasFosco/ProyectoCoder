@@ -47,6 +47,11 @@
     margin-top: 10rem;
 }
 
+.section__iframe{
+    width: 45rem;
+    height: 35rem;
+}
+
 .section__title{
     font-size: 4rem;
     margin-bottom: 1.5rem;

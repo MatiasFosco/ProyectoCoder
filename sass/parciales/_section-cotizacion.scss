@@ -1,0 +1,21 @@
+.section{
+    margin-top: 10rem;
+    &__txt{
+    font-size: 3rem;
+}   &__sub-txt{
+    font-size: 1.5rem;
+}   &__input{
+    height: 3rem;
+    font-size: 1.2rem;
+}   &__ckeck{
+    height: 1.5rem;
+    width: 1.5rem;
+}   &__block{
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+}   &__button {
+    background:rgba(23, 18, 116);
+    height: 3rem;
+    font-size: 1.2rem;
+}
+}

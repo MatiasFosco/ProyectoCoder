@@ -41,16 +41,15 @@
     text-decoration: underline;
 }
 
-
 .section{
     margin-top: 10rem;
 }
 
-.txt{
+.section__txt{
     font-size: 3rem;
 }
 
-.sub-text{
+.section__sub-txt{
     font-size: 1.5rem;
 }
 

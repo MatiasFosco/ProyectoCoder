@@ -1,0 +1,58 @@
+.carrusel{
+    margin-top: 8rem;    
+    &__bloque{
+    position: absolute;
+    top: 10rem;
+}   &__container{
+    background-image: url("../multimedia/carrusel1.jpg");
+    height: calc(100vh - 7rem);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.3);
+}   &__container--modif{
+    background-image: url("../multimedia/carrusel2.jpg");
+    height: calc(100vh - 7rem);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.3);
+}   &__title{
+    display: block;
+    width:auto;
+    font-size: 6rem;
+    margin-bottom: 0;
+    @include mobile{
+    font-size: 3rem;
+    margin-bottom: 1rem; 
+}   @include tablet{
+    font-size: 3.8rem;
+} 
+}   &__p{
+    display: block;
+    width: auto;
+    font-size: 2.5rem;
+    @include mobile{
+    font-size: 1.5rem;
+}   @include tablet{
+    font-size: 1.7rem;
+}  
+}   &__button{
+    display: inline-block;
+    font-size: 2.5rem;
+    margin: 2rem;
+    background: rgba(23, 18, 116, 1);
+    border-radius: 99px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    @include mobile{
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0.5rem;
+}   @include tablet{
+    font-size: 1.5rem;
+    margin: 1rem;
+}  
+}
+}

@@ -1,0 +1,30 @@
+.header{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    &__nav{
+    background: rgb(21,31,75);
+    background: -moz-linear-gradient(0deg, rgba(21,31,75,1) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(21,31,75,1) 0%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(0deg, rgba(21,31,75,1) 0%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#151f4b",endColorstr="#000000",GradientType=1);
+}   &__img{
+    width: 20rem;
+    height: 7rem;
+    filter: invert(1);
+}   &__list{
+    font-size: 1.4rem;
+    color: white;
+    border-left: 0.1rem solid white;
+    @include tablet{
+    font-size: 1.2rem;
+}
+    &__list:hover{
+    color: aquamarine;
+    text-decoration: underline;
+}
+}
+}

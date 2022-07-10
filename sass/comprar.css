@@ -1,0 +1,113 @@
+/*Reset margin and padding*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Convert px to rem*/
+.html__style {
+  font-size: 62.5%;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.header__nav {
+  background: rgb(21, 31, 75);
+  background: linear-gradient(0deg, rgb(21, 31, 75) 0%, rgb(0, 0, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#151f4b",endColorstr="#000000",GradientType=1);
+}
+.header__img {
+  width: 20rem;
+  height: 7rem;
+  filter: invert(1);
+}
+.header__list {
+  font-size: 1.4rem;
+  color: white;
+  border-left: 0.1rem solid white;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .header__list {
+    font-size: 1.2rem;
+  }
+}
+.header__list__list:hover {
+  color: aquamarine;
+  text-decoration: underline;
+}
+
+.section {
+  margin-top: 10rem;
+}
+.section__title {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+.section__p {
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+.footer {
+  background: rgb(21, 31, 75);
+  background: linear-gradient(0deg, rgb(21, 31, 75) 0%, rgb(0, 0, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#151f4b",endColorstr="#000000",GradientType=1);
+}
+.footer__ul {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  list-style: none;
+}
+@media (max-width: 576px) {
+  .footer__ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer__li {
+  font-size: 1.3rem;
+  margin: 1rem;
+  margin-top: 2rem;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .footer__li {
+    font-size: 1rem;
+  }
+}
+.footer__li__li:hover {
+  color: aquamarine;
+  text-decoration: underline;
+}
+.footer__grilla {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0.7rem;
+}
+@media (max-width: 576px) {
+  .footer__grilla {
+    grid-template-columns: 1fr;
+  }
+}
+.footer__st {
+  display: block;
+  text-align: center;
+  font-size: 1.4rem;
+  border-bottom: 0.1rem solid white;
+  border-top: 0.1rem solid white;
+}
+.footer__p {
+  font-size: 1.2rem;
+}
+.footer__div {
+  margin: 0rem 1rem 1rem 1rem;
+}/*# sourceMappingURL=comprar.css.map */

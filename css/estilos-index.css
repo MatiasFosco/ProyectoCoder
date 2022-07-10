@@ -13,7 +13,7 @@
     height: auto;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 3;
 }
 
 .header__nav{
@@ -42,10 +42,9 @@
 }
 
 /*Carrusel-content*/
-.carrusel__section{
+.carrusel{
     margin-top: 8rem;
 }
-
 
 .carrusel__bloque{
     position: absolute;
@@ -93,7 +92,6 @@
     padding-right: 1.5rem;
 }
 
-
 .section{
     background: #E8EBFD;
 }
@@ -122,8 +120,6 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
-
-
 
 /*Footer list -- con flex*/
 .footer{

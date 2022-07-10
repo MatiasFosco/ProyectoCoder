@@ -1,0 +1,38 @@
+.section{
+    margin-top: 10rem;
+    &__container{
+    @include mobile{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+}   &__iframe{
+    width: 45rem;
+    height: 35rem;
+    @include mobile{
+    width: auto;
+    height: auto;
+}
+}   &__title{
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    @include mobile{
+    font-size: 2.5rem;
+}
+    @include tablet{
+    font-size: 3rem;
+}
+}   &__p{
+    font-size: 2rem;
+    margin-bottom: 0.4rem;
+    @include mobile {
+    font-size: 1.3rem;
+    margin-bottom: 0.2rem;
+}
+    @include tablet{
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+}
+}
+

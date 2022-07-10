@@ -1,0 +1,32 @@
+.section{
+    background: #E8EBFD;
+    &__img{
+    height: 23rem;
+    width: 100%;
+    @include mobile{
+    height: 21rem;
+    width: 28rem;
+}   @include tablet{
+    height: 14rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}   @include laptop{
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+}   &__button {
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    background: rgba(23, 18, 116, 1);
+}   &__p{
+    font-size: 1.6rem;
+    text-align: center;
+    height: 10rem;
+    overflow:hidden;
+}   &__img--modif{
+    width: 5rem;
+    filter: grayscale(1);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+}
