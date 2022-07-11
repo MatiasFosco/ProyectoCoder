@@ -4,19 +4,11 @@
     position: absolute;
     top: 10rem;
 }   &__container{
+    @include carrusel;
     background-image: url("../multimedia/carrusel1.jpg");
-    height: calc(100vh - 7rem);
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    filter: brightness(0.3);
 }   &__container--modif{
+    @include carrusel;
     background-image: url("../multimedia/carrusel2.jpg");
-    height: calc(100vh - 7rem);
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    filter: brightness(0.3);
 }   &__title{
     display: block;
     width:auto;
@@ -41,7 +33,7 @@
     display: inline-block;
     font-size: 2.5rem;
     margin: 2rem;
-    background: rgba(23, 18, 116, 1);
+    background: map-get($colores, "btn");
     border-radius: 99px;
     padding-left: 1.5rem;
     padding-right: 1.5rem;

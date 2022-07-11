@@ -1,7 +1,8 @@
-/*Reset margin and padding*/
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"); /*Reset margin and padding*/
 * {
   margin: 0;
   padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 /*Convert px to rem*/
@@ -45,13 +46,48 @@
 .section {
   margin-top: 10rem;
 }
+.section__div {
+  background-color: #E8EBFD;
+}
+.section__div:hover {
+  transform: scale(1.2);
+  transform: filter;
+  filter: drop-shadow(2px 4px 6px black);
+}
+@media (max-width: 576px) {
+  .section__div:hover {
+    transform: none;
+    filter: none;
+  }
+}
+.section__img {
+  height: 23rem;
+}
 .section__title {
-  font-size: 4rem;
-  margin-bottom: 1.5rem;
+  font-size: 3.5rem;
+  font-family: Arial;
+  margin: 3rem;
+}
+.section__button {
+  background: rgb(23, 18, 116);
+  height: 3rem;
+  font-size: 1.2rem;
 }
 .section__p {
-  font-size: 2rem;
-  margin-bottom: 0.4rem;
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
+
+hr {
+  color: inherit;
+  border: 0;
+  border-top: 0.2rem solid;
+  opacity: 0.25;
+  margin-top: 4rem;
+}
+
+main {
+  margin-bottom: 5rem;
 }
 
 .footer {

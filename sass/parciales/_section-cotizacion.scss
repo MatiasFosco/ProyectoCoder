@@ -1,6 +1,8 @@
 .section{
     margin-top: 10rem;
-    &__txt{
+    &__contenedor{
+    background-color: map-get($colores, "tarjetas");
+}   &__txt{
     font-size: 3rem;
 }   &__sub-txt{
     font-size: 1.5rem;
@@ -14,7 +16,7 @@
     font-size: 1.3rem;
     margin-left: 0.5rem;
 }   &__button {
-    background:rgba(23, 18, 116);
+    background:map-get($colores, "btn");
     height: 3rem;
     font-size: 1.2rem;
 }

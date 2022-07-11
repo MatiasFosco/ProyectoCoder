@@ -1,0 +1,33 @@
+$colores:(
+    "btn": rgba(23, 18, 116),
+    "li-hover": aquamarine,
+    "tarjetas": #E8EBFD,
+); 
+
+@mixin carrusel {
+    height: calc(100vh - 7rem);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.3);
+};
+
+@mixin gradient {
+    background: rgb(21,31,75);
+    background: -moz-linear-gradient(0deg, rgba(21,31,75,1) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(21,31,75,1) 0%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(0deg, rgba(21,31,75,1) 0%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#151f4b",endColorstr="#000000",GradientType=1);
+}
+
+@mixin parrafo {
+    font-size: 1.4rem;
+    text-align: center;
+    height: 10rem;
+    overflow:hidden;    
+};
+
+@mixin title {
+    font-size: 3rem;
+    font-family: Arial;
+}

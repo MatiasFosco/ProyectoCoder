@@ -1,6 +1,7 @@
 .section{
     margin-top: 10rem;
     &__container{
+    background-color: map-get($colores, "tarjetas");
     @include mobile{
     display: flex;
     flex-direction: column;

@@ -34,15 +34,15 @@
     </header>
     <main>
       <section class="carrusel">
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators" style="z-index: 1;">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
           </div>
           <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="4000">
+            <div class="carousel-item active swing-in-right-bck" data-bs-interval="4000">
                 <img src="./multimedia/carrusel1.jpg" class="carrusel__container">
-                <div class="carrusel__bloque carousel-caption d-md-block">
+              <div class="carrusel__bloque carousel-caption d-md-block">
                 <h1 class="text-white carrusel__title">SOMOS CARSHOP ARG</h1>
                 <p class="text-white carrusel__p">EL AUTO DE TUS SUEÑOS A UN SOLO CLICK</p>              
                 <div>
@@ -51,7 +51,7 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item" data-bs-interval="3500">
+            <div class="carousel-item swing-in-right-bck" data-bs-interval="3500">
               <img src="./multimedia/carrusel2.jpg" alt="" class="carrusel__container--modif">
               <div class="carrusel__bloque carousel-caption d-md-block">
                 <h3 class="text-white carrusel__title">FINANCIACION</h3>
@@ -60,10 +60,13 @@
                   <button type="button" class="btn btn-secondary carrusel__button" href="./autos/comprar.html">Comprar</button>
                   <button type="button" class="btn btn-secondary carrusel__button" href="./autos/cotizacion.html">Vender o Cambiar</button>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
       </section>
       <section class="container text-center mt-5 mb-5">
+        <h3 class="mb-4 section__title">Sobre nosotros.</h3>
         <div class="row gy-5">
           <div class="col-12 col-sm-4">
             <div class="p-3 border section" data-aos="zoom-in" data-aos-duration="3000">
@@ -75,7 +78,7 @@
           </div>
           <div class="col-12 col-sm-4">
             <div class="p-3 border section" data-aos="zoom-in" data-aos-duration="3000">
-              <img class="img-fluid section__img" src="./multimedia/nuestra-mision.jpg" alt="Nuestra Historia">
+              <img class="img-fluid section__img" src="./multimedia/nuestra-mision.jpg" alt="Nuestra Misión">
               <h3>Nuestra Misión</h3>
               <p class="section__p">Nuestra mision es brindarle una amplia gama de servios acorde a las necesidades del usuario automotor.</p>
               <button type="button" class="btn btn-secondary section__button">Leer más</button>
@@ -83,32 +86,33 @@
           </div>
           <div class="col-12 col-sm-4" data-aos="zoom-in" data-aos-duration="3000">
             <div class="p-3 border section">
-              <img class="img-fluid section__img" src="./multimedia/nuestro-equipo.jpg" alt="Nuestra Historia">
+              <img class="img-fluid section__img" src="./multimedia/nuestro-equipo.jpg" alt="Nuestro Equipo">
               <h3>Nuestro Equipo</h3>
               <p class="section__p">CarShop cuenta con un equipo de mecanicos experimentados que fueron formados con nuevas tecnologias para vehiculos de vanguardia y energias alternativas.</p>
               <button type="button" class="btn btn-secondary section__button">Leer más</button>
             </div>
           </div>
-          <h3>¿Por que elegirnos?</h3>
+          <hr>
+          <h3 class="mb-3 mt-5 section__title">¿Por que elegirnos?</h3>
           <div class="col-12 col-sm-4">
             <div class="p-3 border section" data-aos="zoom-in" data-aos-duration="3000">
               <img class="section__img--modif" src="./multimedia/icon-digitalizacion.png" alt="Digitalización">
               <h3>Digitalización</h3>
-              <p class="section__p">Usamos el poder de la tecnología para facilitar la compra-venta de autos. Digitalizamos y simplificamos al máximo el proceso, para lograr una experiencia de usuario mucho más fácil.</p>
+              <p class="section__p--modif">Usamos el poder de la tecnología para facilitar la compra-venta de autos. Digitalizamos y simplificamos al máximo el proceso, para lograr una experiencia de usuario mucho más fácil.</p>
             </div>
           </div>
           <div class="col-12 col-sm-4">
             <div class="p-3 border section" data-aos="zoom-in" data-aos-duration="3000">
               <img class="section__img--modif" src="./multimedia/icon-seguridad.png" alt="Seguridad">
               <h3>Seguridad</h3>
-              <p class="section__p">Nuestra empresa y nuestro equipo profesional de agentes e inspectores mecánicos te acompaña en todo el proceso, asegurando también pagos y cobranzas seguras.</p>
+              <p class="section__p--modif">Nuestra empresa y nuestro equipo profesional de agentes e inspectores mecánicos te acompaña en todo el proceso, asegurando también pagos y cobranzas seguras.</p>
             </div>
           </div>
           <div class="col-12 col-sm-4">
             <div class="p-3 border section" data-aos="zoom-in" data-aos-duration="3000">
               <img class="section__img--modif" src="./multimedia/icon-transparencia.png" alt="Transparencia">
               <h3>Transparencia</h3>
-              <p class="section__p">Queremos eliminar la desconfianza de este proceso. Garantizamos la calidad de nuestros autos y somos transparentes y claros en los costos reales en cada paso.</p>
+              <p class="section__p--modif">Queremos eliminar la desconfianza de este proceso. Garantizamos la calidad de nuestros autos y somos transparentes y claros en los costos reales en cada paso.</p>
             </div>
           </div>
         </div>
@@ -144,8 +148,6 @@
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <script> AOS.init(); </script>
 </body>
 </html>

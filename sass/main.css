@@ -1,7 +1,8 @@
-/*Reset margin and padding*/
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"); /*Reset margin and padding*/
 * {
   margin: 0;
   padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 /*Convert px to rem*/
@@ -50,20 +51,20 @@
   top: 10rem;
 }
 .carrusel__container {
-  background-image: url("../multimedia/carrusel1.jpg");
   height: calc(100vh - 7rem);
   width: 100%;
   background-size: cover;
   background-position: center;
   filter: brightness(0.3);
+  background-image: url("../multimedia/carrusel1.jpg");
 }
 .carrusel__container--modif {
-  background-image: url("../multimedia/carrusel2.jpg");
   height: calc(100vh - 7rem);
   width: 100%;
   background-size: cover;
   background-position: center;
   filter: brightness(0.3);
+  background-image: url("../multimedia/carrusel2.jpg");
 }
 .carrusel__title {
   display: block;
@@ -122,7 +123,7 @@
 }
 
 .section {
-  background: #E8EBFD;
+  background-color: #E8EBFD;
 }
 .section__img {
   height: 23rem;
@@ -147,16 +148,30 @@
     padding-bottom: 0.8rem;
   }
 }
+.section__title {
+  font-size: 3rem;
+  font-family: Arial;
+}
 .section__button {
   margin-bottom: 0.5rem;
   margin-left: 0.5rem;
   background: rgb(23, 18, 116);
 }
 .section__p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-align: center;
   height: 10rem;
   overflow: hidden;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .section__p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .section__p {
+    font-size: 1.2rem;
+  }
 }
 .section__img--modif {
   width: 5rem;
@@ -164,7 +179,66 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+.section__p--modif {
+  font-size: 1.4rem;
+  text-align: center;
+  height: 10rem;
+  overflow: hidden;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .section__p--modif {
+    font-size: 1rem;
+    overflow: unset;
+    text-align: justify;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .section__p--modif {
+    font-size: 1.2rem;
+    overflow: unset;
+    text-align: justify;
+  }
+}
 
+hr {
+  color: inherit;
+  border: 0;
+  border-top: 0.2rem solid;
+  opacity: 0.25;
+  margin-top: 4rem;
+}
+
+/*Start carousel animation*/
+.swing-in-right-bck {
+  -webkit-animation: swing-in-right-bck 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation: swing-in-right-bck 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+
+@-webkit-keyframes swing-in-right-bck {
+  0% {
+    transform: rotateY(70deg);
+    transform-origin: right;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateY(0);
+    transform-origin: right;
+    opacity: 1;
+  }
+}
+@keyframes swing-in-right-bck {
+  0% {
+    transform: rotateY(70deg);
+    transform-origin: right;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateY(0);
+    transform-origin: right;
+    opacity: 1;
+  }
+}
+/*End carousel animation*/
 .footer {
   background: rgb(21, 31, 75);
   background: linear-gradient(0deg, rgb(21, 31, 75) 0%, rgb(0, 0, 0) 100%);
